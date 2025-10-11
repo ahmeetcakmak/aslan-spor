@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="x-apple-disable-message-reformatting">
+    <title>Aslan Spor Akademi - İletişim Formu</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #f8fafc;
+        }
+        
+        .email-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 20px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        
+        .company-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .company-tagline {
+            font-size: 14px;
+            opacity: 0.9;
+            color: #cbd5e1;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .greeting {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 20px;
+        }
+        
+        .message {
+            font-size: 16px;
+            color: #475569;
+            margin-bottom: 30px;
+            line-height: 1.7;
+        }
+        
+        .form-details {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            border-radius: 12px;
+            padding: 30px;
+            margin: 25px 0;
+        }
+        
+        .form-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .form-title::before {
+            content: "📋";
+            margin-right: 10px;
+        }
+        
+        .detail-row {
+            display: flex;
+            margin-bottom: 18px;
+            padding: 15px;
+            border-bottom: 1px solid #e2e8f0;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .detail-row:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        
+        .detail-label {
+            font-weight: 700;
+            color: #1e293b;
+            min-width: 140px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .detail-value {
+            color: #1e293b;
+            font-size: 15px;
+            flex: 1;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+        
+        .program-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 13px;
+            font-weight: 600;
+            box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .contact-info {
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            border-radius: 8px;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        
+        .contact-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-title::before {
+            content: "📞";
+            margin-right: 10px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #475569;
+        }
+        
+        .contact-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .contact-icon {
+            width: 16px;
+            margin-right: 10px;
+        }
+        
+        .footer {
+            background-color: #1e293b;
+            color: #cbd5e1;
+            padding: 25px 30px;
+            text-align: center;
+        }
+        
+        .footer-text {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 15px;
+        }
+        
+        .footer-link {
+            color: #fbbf24;
+            text-decoration: none;
+            font-size: 12px;
+        }
+        
+        .footer-link:hover {
+            text-decoration: underline;
+        }
+        
+        .urgent-notice {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 4px solid #f59e0b;
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(245, 158, 11, 0.2);
+            border: 1px solid #fbbf24;
+        }
+        
+        .urgent-text {
+            font-size: 15px;
+            color: #92400e;
+            font-weight: 600;
+            text-align: center;
+            line-height: 1.5;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: #f8fafc;
+            }
+            
+            .email-container {
+                margin: 5px;
+                border-radius: 8px;
+            }
+            
+            .header {
+                padding: 20px 15px;
+            }
+            
+            .company-name {
+                font-size: 20px;
+                margin-bottom: 5px;
+            }
+            
+            .company-tagline {
+                font-size: 12px;
+            }
+            
+            .content {
+                padding: 20px 15px;
+            }
+            
+            .greeting {
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+            
+            .message {
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+            
+            .form-details {
+                padding: 20px 15px;
+                margin: 20px 0;
+                border-radius: 8px;
+            }
+            
+            .form-title {
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+            
+            .detail-row {
+                flex-direction: column;
+                padding: 12px;
+                margin-bottom: 12px;
+                border-radius: 6px;
+            }
+            
+            .detail-label {
+                min-width: auto;
+                margin-bottom: 8px;
+                font-size: 12px;
+                text-align: left;
+            }
+            
+            .detail-value {
+                font-size: 14px;
+                width: 100%;
+            }
+            
+            .program-badge {
+                padding: 6px 12px;
+                font-size: 11px;
+                margin-top: 5px;
+            }
+            
+            .contact-info {
+                padding: 20px 15px;
+                margin: 20px 0;
+            }
+            
+            .contact-title {
+                font-size: 14px;
+                margin-bottom: 12px;
+            }
+            
+            .contact-item {
+                font-size: 13px;
+                margin-bottom: 8px;
+            }
+            
+            .urgent-notice {
+                padding: 15px;
+                margin: 15px 0;
+                border-radius: 8px;
+            }
+            
+            .urgent-text {
+                font-size: 13px;
+                line-height: 1.4;
+            }
+            
+            .footer {
+                padding: 20px 15px;
+            }
+            
+            .footer-text {
+                font-size: 13px;
+                margin-bottom: 12px;
+            }
+            
+            .footer-links {
+                flex-direction: column;
+                gap: 8px;
+                margin-top: 12px;
+            }
+            
+            .footer-link {
+                font-size: 11px;
+                padding: 8px 12px;
+                background-color: rgba(251, 191, 36, 0.1);
+                border-radius: 4px;
+                display: inline-block;
+                text-align: center;
+            }
+            
+            .detail-row[style*="flex-direction: column"] {
+                padding: 10px;
+            }
+            
+            .detail-row[style*="flex-direction: column"] .detail-value {
+                padding: 10px;
+                font-size: 13px;
+                line-height: 1.4;
+            }
+        }
+        
+        @media only screen and (max-width: 480px) {
+            .email-container {
+                margin: 2px;
+            }
+            
+            .header {
+                padding: 15px 10px;
+            }
+            
+            .company-name {
+                font-size: 18px;
+            }
+            
+            .content {
+                padding: 15px 10px;
+            }
+            
+            .form-details {
+                padding: 15px 10px;
+            }
+            
+            .contact-info {
+                padding: 15px 10px;
+            }
+            
+            .footer {
+                padding: 15px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <div class="company-name">🏋️‍♂️ Aslan Spor Akademi</div>
+            <div class="company-tagline">BESYO ve PMYO Hazırlık Merkezi</div>
+        </div>
+        
+        <!-- Content -->
+        <div class="content">
+            <div class="greeting">Yeni İletişim Formu Mesajı</div>
+            
+            <div class="message">
+                Merhaba,<br><br>
+                Aslan Spor Akademi web sitenizden yeni bir iletişim formu mesajı alınmıştır. 
+                Aşağıda mesaj detayları bulunmaktadır. Lütfen en kısa sürede geri dönüş yapınız.
+            </div>
+            
+            <!-- Urgent Notice -->
+            <div class="urgent-notice">
+                <div class="urgent-text">⚠️ Bu mesaj otomatik olarak gönderilmiştir. Lütfen 24 saat içinde geri dönüş yapın.</div>
+            </div>
+            
+            <!-- Form Details -->
+            <div class="form-details">
+                <div class="form-title">Form Detayları</div>
+                
+                <div class="detail-row">
+                    <div class="detail-label">👤 Ad Soyad:</div>
+                    <div class="detail-value">{{from_name}}</div>
+                </div>
+                
+                <div class="detail-row">
+                    <div class="detail-label">📧 E-posta:</div>
+                    <div class="detail-value">{{from_email}}</div>
+                </div>
+                
+                <div class="detail-row">
+                    <div class="detail-label">📱 Telefon:</div>
+                    <div class="detail-value">{{from_phone}}</div>
+                </div>
+                
+                <div class="detail-row">
+                    <div class="detail-label">🎯 Program:</div>
+                    <div class="detail-value">
+                        <span class="program-badge">{{program}}</span>
+                    </div>
+                </div>
+                
+                <div class="detail-row" style="flex-direction: column; align-items: flex-start;">
+                    <div class="detail-label">💬 Mesaj:</div>
+                    <div class="detail-value" style="margin-top: 10px; padding: 15px; background-color: rgba(255, 255, 255, 0.8); border-radius: 8px; border-left: 4px solid #3b82f6; font-style: italic; line-height: 1.6;">{{message}}</div>
+                </div>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <div class="contact-title">Hızlı İletişim</div>
+                
+                <div class="contact-item">
+                    <span class="contact-icon">📞</span>
+                    <span>Telefon: +90 543 247 00 21</span>
+                </div>
+                
+                <div class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <span>E-posta: info@aslanspor.com</span>
+                </div>
+                
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <span>Adres: Çay Çiçeği Sk., Bahçelievler, İstanbul</span>
+                </div>
+                
+                <div class="contact-item">
+                    <span class="contact-icon">⏰</span>
+                    <span>Çalışma Saatleri: 06:00 - 23:00 (Her gün)</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-text">
+                <strong>Aslan Spor Akademi</strong><br>
+                BESYO ve PMYO Hazırlıkta Doğru Adres
+            </div>
+            
+            <div class="footer-links">
+                <a href="https://aslanspor.com" class="footer-link">Web Sitesi</a>
+                <a href="https://wa.me/905337491843" class="footer-link">WhatsApp</a>
+                <a href="mailto:info@aslanspor.com" class="footer-link">E-posta</a>
+            </div>
+            
+            <div style="font-size: 12px; color: #94a3b8; margin-top: 15px;">
+                © 2025 Aslan Spor Akademi. Tüm hakları saklıdır.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
