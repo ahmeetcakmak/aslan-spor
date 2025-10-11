@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
-import { Button } from '@/components/ui/Button';
+import { SimpleButton as Button } from '@/components/ui/SimpleButton';
 import { ArrowLeft, Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';

@@ -2,7 +2,7 @@
 
 import { motion, AnimatePresence } from 'framer-motion';
 import { useRouter } from 'next/navigation';
-import { Button } from '@/components/ui/Button';
+import { SimpleButton as Button } from '@/components/ui/SimpleButton';
 import { ArrowLeft, Calendar, Clock, Tag, Share2, BookOpen, X, Copy, MessageCircle, Instagram } from 'lucide-react';
 import { useState } from 'react';
 
