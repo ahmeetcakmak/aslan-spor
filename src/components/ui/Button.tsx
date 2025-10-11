@@ -1,18 +1,16 @@
 import { forwardRef } from 'react';
-import { motion, MotionProps } from 'framer-motion';
 import { cn } from '@/lib/utils';
 
-interface ButtonProps extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'onAnimationStart' | 'onAnimationEnd'> {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
   size?: 'sm' | 'md' | 'lg';
   asChild?: boolean;
-  motionProps?: MotionProps;
 }
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant = 'primary', size = 'md', asChild = false, motionProps, ...props }, ref) => {
+  ({ className, variant = 'primary', size = 'md', asChild = false, ...props }, ref) => {
     const baseClasses = cn(
-      'inline-flex items-center justify-center rounded-full font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
+      'inline-flex items-center justify-center rounded-full font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:scale-105 active:scale-95',
       {
         // Variants
         'bg-gradient-to-r from-primary to-primary-light text-white shadow-lg hover:shadow-xl hover:from-primary-light hover:to-primary': variant === 'primary',
@@ -30,24 +28,16 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 
     if (asChild) {
       return (
-        <motion.div
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
-          {...motionProps}
-          className={baseClasses}
-        >
+        <div className={baseClasses}>
           {props.children}
-        </motion.div>
+        </div>
       );
     }
 
     return (
-      <motion.button
+      <button
         ref={ref}
         className={baseClasses}
-        whileHover={{ scale: 1.02 }}
-        whileTap={{ scale: 0.98 }}
-        {...motionProps}
         {...props}
       />
     );
