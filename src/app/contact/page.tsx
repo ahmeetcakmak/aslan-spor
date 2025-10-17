@@ -11,7 +11,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: 'Telefon',
-    value: '+90 543 247 00 21',
+    value: '+90 533 749 18 43',
     description: '7/24 hizmetinizdeyiz'
   },
   {
@@ -130,7 +130,7 @@ export default function ContactPage() {
                       type="text"
                       name="name"
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-gray-900"
                       placeholder="Adınız ve soyadınız"
                     />
                   </div>
@@ -142,8 +142,8 @@ export default function ContactPage() {
                       type="tel"
                       name="phone"
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                      placeholder="+90 543 247 00 21"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-gray-900"
+                      placeholder="+90 533 749 18 43"
                     />
                   </div>
                 </div>
@@ -156,7 +156,7 @@ export default function ContactPage() {
                     type="email"
                     name="email"
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-gray-900"
                     placeholder="ornek@email.com"
                   />
                 </div>
@@ -165,7 +165,7 @@ export default function ContactPage() {
                   <label className="block text-sm font-medium text-foreground mb-2">
                     İlgilendiğiniz Program
                   </label>
-                  <select name="program" required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                  <select name="program" required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-gray-900">
                     <option value="">Program seçiniz</option>
                     <option value="BESYO Hazırlık">BESYO Hazırlık</option>
                     <option value="PMYO Hazırlık">PMYO Hazırlık</option>
@@ -183,7 +183,7 @@ export default function ContactPage() {
                     name="message"
                     required
                     rows={6}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent resize-none"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent resize-none text-gray-900"
                     placeholder="Mesajınızı buraya yazın..."
                   />
                 </div>
@@ -267,7 +267,7 @@ export default function ContactPage() {
                 <Button 
                   variant="secondary" 
                   className="w-full flex items-center justify-center space-x-2"
-                  onClick={() => window.open('https://wa.me/905432470021', '_blank')}
+                  onClick={() => window.open('https://wa.me/905337491843', '_blank')}
                 >
                   <span>WhatsApp ile Hemen İletişim</span>
                 </Button>
