@@ -9,7 +9,7 @@ const courses = [
   {
     id: 1,
     title: 'BESYO Hazırlık Programı',
-    description: 'BESYO sınavlarına özel tasarlanmış kapsamlı hazırlık programı',
+    description: 'BESYO sınavlarına özel tasarlanmış kapsamlı hazırlık programı. Beden Eğitimi ve Spor Yüksekokulu sınavları için parkur antrenmanları, koordinasyon ve dayanıklılık gelişimi.',
     duration: '8-12 ay',
     students: '150+',
     features: [
@@ -28,7 +28,7 @@ const courses = [
   {
     id: 2,
     title: 'PMYO Hazırlık Programı',
-    description: 'PMYO sınavları için özel olarak hazırlanmış yoğun program',
+    description: 'PMYO sınavları için özel olarak hazırlanmış yoğun program. Polis Meslek Yüksekokulu sınavları için zamanlı parkur antrenmanları, hız ve çeviklik gelişimi.',
     duration: '8-12 ay',
     students: '120+',
     features: [
@@ -48,7 +48,7 @@ const courses = [
   {
     id: 3,
     title: 'MSÜ Hazırlık Programı',
-    description: 'MSÜ sınavlarına yönelik özel hazırlık programı',
+    description: 'MSÜ sınavlarına yönelik özel hazırlık programı. Milli Savunma Üniversitesi sınavları için güç, dayanıklılık ve esneklik antrenmanları.',
     duration: '8-12 ay',
     students: '80+',
     features: [
@@ -86,8 +86,8 @@ const courses = [
   },
   {
     id: 5,
-    title: 'JAMYO Hazırlık Programı',
-    description: 'Jandarma ve Sahil Güvenlik Akademisi sınavlarına özel hazırlık',
+    title: 'Jandarma Hazırlık Programı',
+    description: 'Jandarma ve Sahil Güvenlik Akademisi sınavlarına özel hazırlık. Jandarma Meslek Yüksekokulu sınavları için fiziksel yeterlilik testleri ve parkur antrenmanları.',
     duration: '8-12 ay',
     students: '90+',
     features: [
@@ -107,7 +107,7 @@ const courses = [
   {
     id: 6,
     title: 'Spor Lisesi Hazırlık Programı',
-    description: 'Spor liselerine giriş sınavlarına yönelik özel hazırlık',
+    description: 'Spor liselerine giriş sınavlarına yönelik özel hazırlık. Spor lisesi sınavları için temel motorik beceriler, koordinasyon ve fiziksel gelişim antrenmanları.',
     duration: '6-10 ay',
     students: '70+',
     features: [
@@ -172,10 +172,10 @@ export default function CoursesPage() {
             </Button>
             
             <h1 className="text-4xl lg:text-6xl font-bold font-display mb-6">
-              Eğitim <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent-light">Programları</span>
+              BESYO, PMYO, MSÜ, Jandarma ve Polis <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent-light">Hazırlık Kursları</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              BESYO, PMYO, MSÜ, JAMYO ve Spor Lisesi sınavlarına özel tasarlanmış, bilimsel temelli eğitim programlarımız.
+              Aslan Spor Akademisi'de BESYO, PMYO, MSÜ, Jandarma, Polis ve Spor Lisesi sınavlarına özel tasarlanmış, bilimsel temelli eğitim programlarımız. Parkur antrenmanları ve uzman kadro ile hedeflerinize ulaşın.
             </p>
           </motion.div>
         </div>
@@ -317,7 +317,7 @@ export default function CoursesPage() {
                 size="lg" 
                 variant="outline"
                 className="text-white border-white hover:bg-white hover:text-primary"
-                onClick={() => window.open('https://wa.me/905432470021', '_blank')}
+                onClick={() => window.open('https://wa.me/905337491843', '_blank')}
               >
                 WhatsApp ile Bilgi Al
               </Button>

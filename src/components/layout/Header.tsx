@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import { Menu, X, Phone } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 
 const navigation = [
   { name: 'Ana Sayfa', href: '/' },
@@ -49,14 +50,20 @@ export default function Header() {
               onClick={() => router.push('/')} 
               className="flex items-center space-x-3"
             >
-              <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                A
+              <div className="w-10 h-10 relative">
+                <Image
+                  src="/aslan-logo.png"
+                  alt="Aslan Spor Akademisi Logo"
+                  fill
+                  className="object-contain"
+                  priority
+                />
               </div>
               <div className="hidden sm:block">
                 <div className="text-xl font-bold text-gray-900 font-display">
                   Aslan Spor
                 </div>
-                <div className="text-sm text-gray-600 -mt-1">Akademi</div>
+                <div className="text-sm text-gray-600 -mt-1">Akademisi</div>
               </div>
             </button>
           </motion.div>

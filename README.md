@@ -1,4 +1,4 @@
-# Aslan Spor Akademi
+# Aslan Spor Akademisi
 
 BESYO ve PMYO hazırlık kursları için modern web sitesi.
 
@@ -41,6 +41,6 @@ Site Netlify üzerinde yayınlanmaktadır.
 
 ## 📞 İletişim
 
-- **Telefon:** +90 543 247 00 21
+- **Telefon:** +90 533 749 18 43
 - **E-posta:** info@aslanspor.com
 - **Adres:** Çay Çiçeği Sk., Bahçelievler, İstanbul

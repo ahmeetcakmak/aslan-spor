@@ -94,9 +94,9 @@ export default function HomePage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              BESYO ve PMYO Hazırlıkta{' '}
+              Aslan Spor Akademisi{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent-light">
-                Doğru Adres
+                BESYO ve PMYO Hazırlık
               </span>
             </motion.h1>
             
@@ -106,9 +106,9 @@ export default function HomePage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Uzman hocalar ve ölçülebilir gelişim odaklı programlar.
+              Uzman antrenör kadromuz ve bilimsel antrenman programlarımızla
               <br className="hidden md:block" />
-              Hedeflerinize giden yolda yanınızdayız.
+              BESYO ve PMYO sınavlarında başarıya ulaşın.
             </motion.p>
 
             <motion.div
@@ -192,10 +192,10 @@ export default function HomePage() {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground font-display mb-6">
-                Hedefine Giden Yolda Yanındayız
+                Aslan Spor Akademisi - Hedefine Giden Yolda Yanındayız
               </h2>
               <p className="text-lg text-muted leading-relaxed mb-8">
-                Performansını bilimsel testlerle ölçüyor, kişiye özel antrenmanlarla hız, 
+                Aslan Spor Akademisi'de performansını bilimsel testlerle ölçüyor, kişiye özel antrenmanlarla hız, 
                 kuvvet ve dayanıklılık gelişimini takip ediyoruz. Uzman kadromuzla 
                 BESYO ve PMYO sınavlarına hazırlanman için gereken tüm desteği sağlıyoruz.
               </p>
@@ -375,7 +375,7 @@ export default function HomePage() {
               Hedeflerine Ulaşmaya Hazır mısın?
             </h2>
             <p className="text-xl text-white/80 mb-8 leading-relaxed">
-              Uzman kadromuz ve bilimsel programlarımızla BESYO ve PMYO sınavlarında başarıya ulaş.
+              Aslan Spor Akademisi'nin uzman kadrosu ve bilimsel programlarıyla BESYO ve PMYO sınavlarında başarıya ulaş.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -391,7 +391,7 @@ export default function HomePage() {
                 size="lg" 
                 variant="outline"
                 className="text-white border-white hover:bg-white hover:text-primary"
-                onClick={() => window.open('https://wa.me/905432470021', '_blank')}
+                onClick={() => window.open('https://wa.me/905337491843', '_blank')}
               >
                 WhatsApp ile İletişim
               </Button>

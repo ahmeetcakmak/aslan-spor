@@ -3,6 +3,7 @@
 import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { Instagram, Facebook, Youtube, Phone, Mail, MapPin } from 'lucide-react';
+import Image from 'next/image';
 
 const navigation = [
   { name: 'Ana Sayfa', href: '/' },
@@ -35,11 +36,16 @@ export default function Footer() {
             className="lg:col-span-2"
           >
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
-                A
+              <div className="w-12 h-12 relative">
+                <Image
+                  src="/aslan-logo.png"
+                  alt="Aslan Spor Akademisi Logo"
+                  fill
+                  className="object-contain"
+                />
               </div>
               <div>
-                <div className="text-2xl font-bold font-display">Aslan Spor Akademi</div>
+                <div className="text-2xl font-bold font-display">Aslan Spor Akademisi</div>
                 <div className="text-gray-400">BESYO ve PMYO Hazırlık</div>
               </div>
             </div>
@@ -52,8 +58,8 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-gray-300">
                 <Phone size={18} className="text-primary" />
-                <a href="tel:+905432470021" className="hover:text-white transition-colors">
-                  +90 543 247 00 21
+                <a href="tel:+905337491843" className="hover:text-white transition-colors">
+                  +90 533 749 18 43
                 </a>
               </div>
               <div className="flex items-center space-x-3 text-gray-300">
@@ -145,7 +151,7 @@ export default function Footer() {
           className="border-t border-gray-700 py-8 flex flex-col md:flex-row items-center justify-between text-gray-400 text-sm"
         >
           <div className="mb-4 md:mb-0">
-            © 2025 Aslan Spor Akademi. Tüm hakları saklıdır.
+            © 2025 Aslan Spor Akademisi. Tüm hakları saklıdır.
           </div>
           <div className="flex space-x-6">
             <button 

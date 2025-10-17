@@ -62,6 +62,118 @@ const blogPosts = [
   }
 ];
 
+// SEO için ek blog yazıları (görünmez, sadece SEO için)
+const seoBlogPosts = [
+  {
+    id: 'seo-1',
+    title: 'BESYO Nedir? BESYO Nasıl Kazanılır? BESYO Sınavına Hazırlık Rehberi',
+    excerpt: 'BESYO (Beden Eğitimi ve Spor Yüksekokulu) nedir, BESYO nasıl kazanılır, BESYO sınavlarına nasıl hazırlanılır? Detaylı rehber...',
+    date: '20 Mart 2025',
+    readTime: '10 dk',
+    category: 'BESYO Rehberi',
+    bgColor: 'bg-gradient-to-br from-blue-500 to-blue-700'
+  },
+  {
+    id: 'seo-2',
+    title: 'PMYO Nedir? PMYO Nasıl Kazanılır? PMYO Sınavına Hazırlık Rehberi',
+    excerpt: 'PMYO (Polis Meslek Yüksekokulu) nedir, PMYO nasıl kazanılır, PMYO sınavlarına nasıl hazırlanılır? Detaylı rehber...',
+    date: '18 Mart 2025',
+    readTime: '9 dk',
+    category: 'PMYO Rehberi',
+    bgColor: 'bg-gradient-to-br from-green-500 to-green-700'
+  },
+  {
+    id: 'seo-3',
+    title: 'MSÜ Nedir? MSÜ Nasıl Kazanılır? MSÜ Sınavına Hazırlık Rehberi',
+    excerpt: 'MSÜ (Milli Savunma Üniversitesi) nedir, MSÜ nasıl kazanılır, MSÜ sınavlarına nasıl hazırlanılır? Detaylı rehber...',
+    date: '16 Mart 2025',
+    readTime: '8 dk',
+    category: 'MSÜ Rehberi',
+    bgColor: 'bg-gradient-to-br from-red-500 to-red-700'
+  },
+  {
+    id: 'seo-4',
+    title: 'Jandarma Nedir? Jandarma Nasıl Olunur? Jandarma Sınavına Hazırlık',
+    excerpt: 'Jandarma nedir, jandarma nasıl olunur, jandarma sınavlarına nasıl hazırlanılır? Jandarma Meslek Yüksekokulu rehberi...',
+    date: '14 Mart 2025',
+    readTime: '8 dk',
+    category: 'Jandarma Rehberi',
+    bgColor: 'bg-gradient-to-br from-purple-500 to-purple-700'
+  },
+  {
+    id: 'seo-5',
+    title: 'Polis Nedir? Polis Nasıl Olunur? Polis Sınavına Hazırlık Rehberi',
+    excerpt: 'Polis nedir, polis nasıl olunur, polis sınavlarına nasıl hazırlanılır? Polis Meslek Yüksekokulu rehberi...',
+    date: '12 Mart 2025',
+    readTime: '8 dk',
+    category: 'Polis Rehberi',
+    bgColor: 'bg-gradient-to-br from-cyan-500 to-cyan-700'
+  },
+  {
+    id: 'seo-6',
+    title: 'Spor Lisesi Nedir? Spor Lisesi Nasıl Kazanılır? Spor Lisesi Sınavı',
+    excerpt: 'Spor lisesi nedir, spor lisesi nasıl kazanılır, spor lisesi sınavlarına nasıl hazırlanılır? Detaylı rehber...',
+    date: '10 Mart 2025',
+    readTime: '7 dk',
+    category: 'Spor Lisesi Rehberi',
+    bgColor: 'bg-gradient-to-br from-orange-500 to-orange-700'
+  },
+  {
+    id: 'seo-7',
+    title: 'BESYO Üniversiteleri Listesi: BESYO Olan Üniversiteler 2025',
+    excerpt: 'BESYO olan üniversiteler listesi, BESYO üniversiteleri, BESYO bölümleri, BESYO taban puanları 2025...',
+    date: '8 Mart 2025',
+    readTime: '6 dk',
+    category: 'BESYO Üniversiteleri',
+    bgColor: 'bg-gradient-to-br from-indigo-500 to-indigo-700'
+  },
+  {
+    id: 'seo-8',
+    title: 'PMYO Üniversiteleri Listesi: PMYO Olan Üniversiteler 2025',
+    excerpt: 'PMYO olan üniversiteler listesi, PMYO üniversiteleri, PMYO bölümleri, PMYO taban puanları 2025...',
+    date: '6 Mart 2025',
+    readTime: '6 dk',
+    category: 'PMYO Üniversiteleri',
+    bgColor: 'bg-gradient-to-br from-teal-500 to-teal-700'
+  },
+  {
+    id: 'seo-9',
+    title: 'MSÜ Üniversiteleri Listesi: MSÜ Olan Üniversiteler 2025',
+    excerpt: 'MSÜ olan üniversiteler listesi, MSÜ üniversiteleri, MSÜ bölümleri, MSÜ taban puanları 2025...',
+    date: '4 Mart 2025',
+    readTime: '6 dk',
+    category: 'MSÜ Üniversiteleri',
+    bgColor: 'bg-gradient-to-br from-pink-500 to-pink-700'
+  },
+  {
+    id: 'seo-10',
+    title: 'BESYO Taban Puanları 2025: BESYO Puanları ve Sıralamaları',
+    excerpt: 'BESYO taban puanları 2025, BESYO puanları, BESYO sıralamaları, BESYO başarı sıralaması...',
+    date: '2 Mart 2025',
+    readTime: '7 dk',
+    category: 'BESYO Puanları',
+    bgColor: 'bg-gradient-to-br from-yellow-500 to-yellow-700'
+  },
+  {
+    id: 'seo-11',
+    title: 'PMYO Taban Puanları 2025: PMYO Puanları ve Sıralamaları',
+    excerpt: 'PMYO taban puanları 2025, PMYO puanları, PMYO sıralamaları, PMYO başarı sıralaması...',
+    date: '28 Şubat 2025',
+    readTime: '7 dk',
+    category: 'PMYO Puanları',
+    bgColor: 'bg-gradient-to-br from-emerald-500 to-emerald-700'
+  },
+  {
+    id: 'seo-12',
+    title: 'MSÜ Taban Puanları 2025: MSÜ Puanları ve Sıralamaları',
+    excerpt: 'MSÜ taban puanları 2025, MSÜ puanları, MSÜ sıralamaları, MSÜ başarı sıralaması...',
+    date: '26 Şubat 2025',
+    readTime: '7 dk',
+    category: 'MSÜ Puanları',
+    bgColor: 'bg-gradient-to-br from-rose-500 to-rose-700'
+  }
+];
+
 
 export default function BlogPage() {
   const router = useRouter();
@@ -88,15 +200,30 @@ export default function BlogPage() {
             </Button>
             
             <h1 className="text-4xl lg:text-6xl font-bold font-display mb-6">
-              Spor <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent-light">Blog</span>
+              BESYO, PMYO, MSÜ, Jandarma ve Polis <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent-light">Hazırlık Blog</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              BESYO, PMYO hazırlık ve spor gelişimi hakkında uzman yazılarımız.
+              Aslan Spor Akademisi'de BESYO, PMYO, MSÜ, Jandarma, Polis hazırlık ve spor lisesi sınavları hakkında uzman yazılarımız. Parkur antrenmanları, sınav teknikleri ve başarı hikayeleri.
             </p>
           </motion.div>
         </div>
       </section>
 
+
+      {/* SEO Blog Posts (Hidden) */}
+      <div style={{ display: 'none' }}>
+        {seoBlogPosts.map((post) => (
+          <article key={post.id}>
+            <h2>{post.title}</h2>
+            <p>{post.excerpt}</p>
+            <div>
+              <span>{post.date}</span>
+              <span>{post.readTime}</span>
+              <span>{post.category}</span>
+            </div>
+          </article>
+        ))}
+      </div>
 
       {/* Blog Posts Grid */}
       <section className="py-20">
@@ -173,10 +300,10 @@ export default function BlogPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl lg:text-4xl font-bold text-white font-display mb-6">
-              Yeni Yazılardan Haberdar Olun
+              BESYO, PMYO, MSÜ, Jandarma ve Polis Hazırlık Yazılarından Haberdar Olun
             </h2>
             <p className="text-xl text-white/80 mb-8 leading-relaxed">
-              BESYO ve PMYO hazırlık hakkında en güncel bilgileri e-posta ile alın.
+              Aslan Spor Akademisi'de BESYO, PMYO, MSÜ, Jandarma, Polis ve spor lisesi hazırlık hakkında en güncel bilgileri e-posta ile alın.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
