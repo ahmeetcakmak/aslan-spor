@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, X, Phone, Search } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 
@@ -59,11 +59,11 @@ export default function Header() {
                   priority
                 />
               </div>
-              <div className="hidden sm:block">
-                <div className="text-xl font-bold text-gray-900 font-display">
+              <div className="block">
+                <div className="text-lg sm:text-xl font-bold text-gray-900 font-display">
                   Aslan Spor
                 </div>
-                <div className="text-sm text-gray-600 -mt-1">Akademisi</div>
+                <div className="text-xs sm:text-sm text-gray-600 -mt-1">Akademisi</div>
               </div>
             </button>
           </motion.div>

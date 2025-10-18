@@ -25,9 +25,6 @@ export const metadata: Metadata = {
     template: '%s | Aslan Spor Akademisi'
   },
   description: 'Aslan Spor Akademisi - BESYO, PMYO, MSÜ, Jandarma ve Polis hazırlık kursları. Parkur antrenmanları, spor lisesi hazırlık, bilimsel antrenman programları. İstanbul Bahçelievler merkezli spor akademisi.',
-  icons: {
-    icon: '/favicon-32x32.png',
-  },
   keywords: [
     'aslan spor akademi', 'aslan spor', 'BESYO hazırlık', 'PMYO hazırlık', 'MSÜ hazırlık', 
     'jandarma hazırlık kursu', 'polis hazırlık kursu', 'BESYO İstanbul', 'PMYO İstanbul', 
@@ -177,6 +174,7 @@ export default function RootLayout({
   return (
     <html lang="tr" className={`${poppins.variable} ${montserrat.variable}`}>
       <head>
+        <link rel="icon" href="/aslan-logo.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

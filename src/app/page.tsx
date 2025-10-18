@@ -89,26 +89,28 @@ export default function HomePage() {
             className="max-w-4xl mx-auto"
           >
             <motion.h1
-              className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold font-display mb-6 leading-tight"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-display mb-8 leading-tight"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Aslan Spor Akademisi{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent-light">
-                BESYO ve PMYO Hazırlık
+              <span className="text-white block mb-2">
+                BESYO ve PMYO
+              </span>
+              <span className="text-white block">
+                Hazırlıkta <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent-light">Doğru Adres</span>
               </span>
             </motion.h1>
             
             <motion.p
-              className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed"
+              className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-12 leading-relaxed max-w-3xl mx-auto"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Uzman antrenör kadromuz ve bilimsel antrenman programlarımızla
+              Modern tesisler, uzman hocalar ve ölçülebilir gelişim odaklı programlar.
               <br className="hidden md:block" />
-              BESYO ve PMYO sınavlarında başarıya ulaşın.
+              Hedeflerinize giden yolda yanındayız.
             </motion.p>
 
             <motion.div
@@ -194,11 +196,11 @@ export default function HomePage() {
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground font-display mb-6">
                 Aslan Spor Akademisi - Hedefine Giden Yolda Yanındayız
               </h2>
-              <p className="text-lg text-muted leading-relaxed mb-8">
-                Aslan Spor Akademisi'de performansını bilimsel testlerle ölçüyor, kişiye özel antrenmanlarla hız, 
-                kuvvet ve dayanıklılık gelişimini takip ediyoruz. Uzman kadromuzla 
-                BESYO ve PMYO sınavlarına hazırlanman için gereken tüm desteği sağlıyoruz.
-              </p>
+                <p className="text-lg text-muted leading-relaxed mb-8">
+                  Performansınızı kapsamlı testlerle ölçüyor, kişiye özel antrenmanlarla hız, 
+                  kuvvet ve dayanıklılık gelişimini takip ediyoruz. Uzman kadromuzla 
+                  BESYO ve PMYO sınavlarına hazırlanmanız için gereken tüm desteği sağlıyoruz.
+                </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {[

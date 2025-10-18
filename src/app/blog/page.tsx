@@ -200,10 +200,10 @@ export default function BlogPage() {
             </Button>
             
             <h1 className="text-4xl lg:text-6xl font-bold font-display mb-6">
-              BESYO, PMYO, MSÜ, Jandarma ve Polis <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent-light">Hazırlık Blog</span>
+              Spor Eğitimi <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent-light">Rehberi</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Aslan Spor Akademisi'de BESYO, PMYO, MSÜ, Jandarma, Polis hazırlık ve spor lisesi sınavları hakkında uzman yazılarımız. Parkur antrenmanları, sınav teknikleri ve başarı hikayeleri.
+              Uzman antrenörlerimizden spor eğitimi, antrenman teknikleri ve başarı stratejileri hakkında güncel bilgiler.
             </p>
           </motion.div>
         </div>
