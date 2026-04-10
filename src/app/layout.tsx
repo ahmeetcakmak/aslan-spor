@@ -97,7 +97,7 @@ export default function RootLayout({
     "name": "Aslan Spor Akademisi",
     "description": "BESYO ve PMYO hazırlık kursları. Bilimsel antrenman programları, deneyimli antrenörler, modern tesisler.",
     "url": "https://aslanspor.com",
-    "telephone": "+90 533 749 18 43",
+    "telephone": "+90 543 247 00 21",
     "email": "info@aslanspor.com",
     "address": {
       "@type": "PostalAddress",
