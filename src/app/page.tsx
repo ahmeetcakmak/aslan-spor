@@ -393,7 +393,7 @@ export default function HomePage() {
                 size="lg" 
                 variant="outline"
                 className="text-white border-white hover:bg-white hover:text-primary"
-                onClick={() => window.open('https://wa.me/905337491843', '_blank')}
+                onClick={() => window.open('https://wa.me/905432470021', '_blank')}
               >
                 WhatsApp ile İletişim
               </Button>
