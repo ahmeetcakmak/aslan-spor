@@ -267,7 +267,7 @@ export default function ContactPage() {
                 <Button 
                   variant="secondary" 
                   className="w-full flex items-center justify-center space-x-2"
-                  onClick={() => window.open('https://wa.me/905337491843', '_blank')}
+                  onClick={() => window.open('https://wa.me/905432470021', '_blank')}
                 >
                   <span>WhatsApp ile Hemen İletişim</span>
                 </Button>
