@@ -143,7 +143,7 @@ export default function ContactPage() {
                       name="phone"
                       required
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-gray-900"
-                      placeholder="+90 543 247 00 21"
+                      placeholder="+90 533 749 18 43"
                     />
                   </div>
                 </div>
