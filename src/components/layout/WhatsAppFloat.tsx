@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { MessageCircle } from 'lucide-react';
 
 export default function WhatsAppFloat() {
-  const phoneNumber = '905432470021';
+  const phoneNumber = '905337491843';
   const message = 'Merhaba! BESYO/PMYO kursları hakkında bilgi almak istiyorum.';
   
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
