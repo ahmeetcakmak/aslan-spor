@@ -11,8 +11,8 @@ const contactInfo = [
   {
     icon: Phone,
     title: 'Telefon',
-    value: '+90 543 247 00 21',
-    description: '+90 543 247 00 21'
+    value: '+90 533 749 18 43',
+    description: '+90 533 749 18 43'
   },
   {
     icon: Mail,
